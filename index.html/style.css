@@ -1,0 +1,92 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(Beach\ mermaid.jpeg);
+    background-size: cover;
+    backdrop-filter: blur(10px);
+}
+
+.container {
+    text-align: center;
+}
+.game-container {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    gap: 10px;
+    background-color: #a46b3a;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+.card {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.card img {
+    width: 80%;
+    height: 80%;
+    display: none;
+}
+.hidden {
+    background-color: rgb(247, 216, 167);
+}
+
+.revealed img {
+    display: block;
+}
+.buttons button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.game-info {
+    margin-left: 20px;
+    text-align: left;
+}
+
+#timer,
+#lives,
+#time-elapsed {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #a46b3a;
+}
+
+#validate-btn {
+    background-color: black;
+    color: white;
+}
+#restart-btn {
+    background-color: black;
+    color: white;
+}
+.logo {
+    width: 15%;
+    position: absolute;
+    left: 100px;
+    top: 50px;
+}
+
+.Tom {
+    width: 30%;
+    position: absolute;
+    left: 10px;
+    top: 220px;
+}
